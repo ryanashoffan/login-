@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #70ca2b56;
+        }
+        .profile-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .profile-card h2 {
+            margin: 10px 0;
+        }
+        .profile-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="<%= profile.photo %>" alt="Profile Picture">
+        <h2><%= profile.name %></h2>
+        <p>NIM: <%= profile.nim %></p>
+        <p>Jurusan: <%= profile.jurusan %></p>
+        <p>Email: <%= profile.email %></p>
+    </div>
+</body>
+</html>
